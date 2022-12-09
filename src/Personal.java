@@ -19,6 +19,7 @@ public class Personal {
         return this.lastName;
     }
 
+    @Override
     public String toString(){
         return getFirstName() + " " + getMiddleName() + " " + getLastName();
     }
