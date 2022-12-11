@@ -7,6 +7,37 @@ public class Employee {
     private static int count = 1;
     private int ID;
 
+    public Employee(int ID, Personal personal, String post, int salary) {
+        this.ID = count++;
+        this.personal = personal;
+        this.post = post;
+        this.salary = salary;
+    }
+
+//Геттеры для всех полей.
+    public Personal getPersonal() {
+    return personal;
+}
+    public String getPost() {return post; }
+    public int getSalary() {
+        return this.salary;
+        }
+
+//Сеттеры для отдела и зарплаты.
+    public void setPost(String post) {
+        this.post = post;
+    }
+    public void setSalary(int salary) {
+        this.salary = salary;
+    }
+
+//Переопределенные методы
+    @Override
+    public String toString() {
+        return "Cотрудник ID: " + ID + " ФИО: " + getPersonal() + "; Отдел: " + getPost() + "; Оклад: "
+                + getSalary() + " руб.";
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -19,35 +50,6 @@ public class Employee {
     @Override
     public int hashCode() {
         return Objects.hash(ID, personal, post, salary);
-    }
-
-    public Employee(int ID, Personal personal, String post, int salary) {
-        this.ID = count++;
-        this.personal = personal;
-        this.post = post;
-        this.salary = salary;
-
-    }
-
-    public int getSalary() {
-        return this.salary;
-        }
-
-    public Personal getPersonal() {
-        return personal;
-    }
-
-    public void setPost(String post) {
-        this.post = post;
-    }
-    public void setSalary(int salary) {
-        this.salary = salary;
-    }
-
-    @Override
-    public String toString() {
-        return "Cотрудник ID: " + ID + " ФИО: " + this.personal + "; Отдел: " + this.post + "; Оклад: "
-                + this.salary + " руб.";
     }
 }
 
