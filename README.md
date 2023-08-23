@@ -1,12 +1,12 @@
-<h1><b>Курсовая работа 1 курса <br> онлайн-университета Skypro.</b></h1>
-<h3>Книга сотрудников</h3>
+<h1><b>Course work of the 1st grade <br> of Skypro Online University.</b></h1>
+<h3>Employee Book</h3>
 
-Программа учета сотрудников, для автоматизации работы с персоналом кадровых и бухгалтерских отделов.
+The employee accounting program, for automating work with staff of HR and accounting departments.
 
-С помощью можно получить следующую информацию:
+By using this program, you can get the next information:
 
-1. Получить список всех сотрудников.
-2. Посчитать сумму затрат на зарплаты.
-3. Найти сотрудника с минимальной заплатой.
-4. Найти сотрудника с максимальной зарплатой.
-5. Подсчитать среднее значение зарплат.
+1. Get a list of all employees.
+2. Calculate the amount of salary costs.
+3. Find an employee with a minimum salary.
+4. Find an employee with the maximum salary.
+5. Calculate the average value of salaries.
